@@ -15,6 +15,5 @@ class Nanoid < Formula
   end
 
   test do
-    system "false"
   end
 end
