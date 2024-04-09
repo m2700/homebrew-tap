@@ -18,6 +18,7 @@ class RiscvGnuToolchain < Formula
 
   def install
     system "./configure", "--with-arch=rv32i", "--with-abi=ilp32", *std_configure_args
+    system "make"
     system "make", "install"
   end
 end
