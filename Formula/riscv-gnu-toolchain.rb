@@ -32,7 +32,7 @@ class RiscvGnuToolchain < Formula
   depends_on "zlib" => :build
 
   def install
-    system "./configure", "--with-arch=rv32i", "--with-abi=ilp32", *std_configure_args
+    system "./configure", "--with-arch=rv32i", "--with-abi=ilp32", "--prefix=#{prefix}"
     system "make"
   end
 end
