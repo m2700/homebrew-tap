@@ -12,7 +12,6 @@ class RiscvGnuToolchain < Formula
   depends_on "curl" => :build
   depends_on "expat" => :build
   depends_on "flex" => :build
-  depends_on "flock" => :build
   depends_on "gawk" => :build
   depends_on "gawk" => :build
   depends_on "git" => :build
@@ -29,6 +28,7 @@ class RiscvGnuToolchain < Formula
   depends_on "python3" => :build
   depends_on "texinfo" => :build
   depends_on "texinfo" => :build
+  depends_on "util-linux" => :build
   depends_on "zlib" => :build
 
   def install
