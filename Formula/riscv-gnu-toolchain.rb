@@ -14,6 +14,7 @@ class RiscvGnuToolchain < Formula
   depends_on "flex" => :build
   depends_on "gawk" => :build
   depends_on "gawk" => :build
+  depends_on "gcc" => :build
   depends_on "git" => :build
   depends_on "glib" => :build
   depends_on "gmp" => :build
