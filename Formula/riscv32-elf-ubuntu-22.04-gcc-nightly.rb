@@ -1,9 +1,9 @@
 class Riscv32ElfUbuntu2204GccNightly < Formula
   desc "GNU toolchain for RISC-V, including GCC"
   homepage "https://github.com/riscv-collab/riscv-gnu-toolchain"
-  version "2024.03.01"
-  url "https://github.com/riscv-collab/riscv-gnu-toolchain/releases/download/2024.03.01/riscv32-elf-ubuntu-22.04-gcc-nightly-#{version}-nightly.tar.gz"
-  sha256 "eb11d9ab086b077ae4ee401e18e75cf2efd7b1cdda2b88447a393a68d64e4d21"
+  version "2024.04.12"
+  url "https://github.com/riscv-collab/riscv-gnu-toolchain/releases/download/#{version}/riscv32-elf-ubuntu-22.04-gcc-nightly-#{version}-nightly.tar.gz"
+  sha256 "ef4ec54696a4d77c256c4f10ddd1f5bb3aefc899dac3ebd3efd7e2583c8c042b"
   license "NOASSERTION"
 
   def install
