@@ -9,6 +9,10 @@ class Jekyll < Formula
 
   def install
     ENV["GEM_HOME"] = libexec
+
+    # Dependencies
+    system "gem", "install", "minima", "jekyll-readme-index", "jekyll-relative-links"
+
     system "gem", "build", "#{name}.gemspec"
     system "gem", "install", "#{name}-#{version}.gem"
     bin.install libexec/"bin/#{name}"
