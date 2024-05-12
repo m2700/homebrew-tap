@@ -4,6 +4,8 @@ class RiscvGnuToolchain < Formula
   license "NOASSERTION"
   head "https://github.com/riscv-collab/riscv-gnu-toolchain.git"
 
+  depends_on "pkg-config" => :build
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "bc" => :build
@@ -12,7 +14,6 @@ class RiscvGnuToolchain < Formula
   depends_on "curl" => :build
   depends_on "expat" => :build
   depends_on "flex" => :build
-  depends_on "gawk" => :build
   depends_on "gawk" => :build
   depends_on "gcc" => :build
   depends_on "git" => :build
@@ -27,7 +28,6 @@ class RiscvGnuToolchain < Formula
   depends_on "ninja" => :build
   depends_on "patchutils" => :build
   depends_on "python3" => :build
-  depends_on "texinfo" => :build
   depends_on "texinfo" => :build
   depends_on "util-linux" => :build
   depends_on "zlib" => :build
