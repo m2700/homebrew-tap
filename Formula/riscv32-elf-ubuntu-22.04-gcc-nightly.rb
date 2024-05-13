@@ -1,3 +1,4 @@
+# No CI
 class Riscv32ElfUbuntu2204GccNightly < Formula
   desc "GNU toolchain for RISC-V, including GCC"
   homepage "https://github.com/riscv-collab/riscv-gnu-toolchain"

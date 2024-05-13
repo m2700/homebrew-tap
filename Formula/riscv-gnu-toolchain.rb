@@ -1,3 +1,4 @@
+# No CI
 class RiscvGnuToolchain < Formula
   desc "GNU toolchain for RISC-V, including GCC"
   homepage "https://github.com/riscv-collab/riscv-gnu-toolchain"
@@ -5,7 +6,6 @@ class RiscvGnuToolchain < Formula
   head "https://github.com/riscv-collab/riscv-gnu-toolchain.git"
 
   depends_on "pkg-config" => :build
-
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "bc" => :build

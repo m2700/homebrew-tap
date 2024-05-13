@@ -17,6 +17,17 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Filter Recipes
+      shell: bash
+      run: |
+        for recipe in Formula/*.rb
+        do
+          ! grep '# No CI' "$recipe" || {
+            echo "Ignoring $recipe"
+            rm "$recipe"
+          }
+        done
+
     - name: Cache
       uses: actions/cache@v4
       with:
