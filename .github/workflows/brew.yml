@@ -44,3 +44,4 @@ jobs:
           fname="$(basename "$recipe")"
           brew install "m2700/tap/${fname%.rb}" || brew install --HEAD "m2700/tap/${fname%.rb}"
         done
+        brew cleanup
