@@ -39,7 +39,7 @@ jobs:
     - name: Homebrew Install Test
       run: |
         eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-        brew tap --full m2700/tap
+        brew tap m2700/tap
         revision=$(git rev-parse --verify HEAD)
         (
           cd /home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/m2700/homebrew-tap
