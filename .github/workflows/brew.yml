@@ -39,8 +39,15 @@ jobs:
     - name: Homebrew Install Test
       run: |
         eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+        brew tap --full m2700/tap
+        revision=$(git rev-parse --verify HEAD)
+        (
+          cd /home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/m2700/homebrew-tap
+          git checkout "$revision"
+        )
+        export HOMEBREW_NO_AUTO_UPDATE=1
         for recipe in Formula/*.rb
         do
           fname="$(basename "$recipe")"
-          brew install "m2700/tap/${fname%.rb}"
+          brew install "m2700/tap/${fname%.rb}" || brew install --HEAD "m2700/tap/${fname%.rb}"
         done
