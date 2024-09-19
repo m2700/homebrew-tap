@@ -2,7 +2,7 @@ class Dtc < Formula
   desc "Device tree compiler"
   homepage "https://git.kernel.org/pub/scm/utils/dtc/dtc.git"
   url "https://mirrors.edge.kernel.org/pub/software/utils/dtc/dtc-1.5.0.tar.xz"
-  sha256 "398098bac205022b39d3dce5982b98c57f1023f3721a53ebcbb782be4cf7885e"
+  sha256 "c672e443c9f7e39f5a7c8e602da6777f9ad55ad70de87de300a43828c8050172"
   license any_of: ["GPL-2.0-or-later", "BSD-2-Clause"]
   head "https://git.kernel.org/pub/scm/utils/dtc/dtc.git", branch: "master"
 
